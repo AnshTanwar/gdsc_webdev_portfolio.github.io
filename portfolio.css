@@ -1,0 +1,417 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color:#FFF4E7;
+     
+}
+.navbar .container ul li.active {
+    background-color: rgb(17, 226, 104);
+    transition: 0.3s ease background-color;
+  }
+.current {
+  color:red; 
+  border:1px solid red;
+}
+
+
+
+
+
+.navbar{
+    background-color: #D4155B;
+    box-shadow: 10px 5 px 20px #DDECF7;
+    height: 8vh;
+    position: fixed;width: 100%;
+    z-index: 2;
+    
+    
+}
+
+
+.navbar .container{
+   
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 100px;
+    
+    
+
+
+}
+.navbar .name{
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    /* background-color: rgb(187, 187, 187); */
+    font-size: 6mm;
+    font-weight: 600;
+    margin: 30px 0px 0px 50px;
+}
+.navbar .name a{
+    color: #DDECF7;
+    text-decoration: none;
+}
+
+.navbar .menu li {
+    
+    display: inline-block;
+    margin: 30px 40px 0px 30px;
+        
+   
+}
+.navbar .menu li a{
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    transition: color 0.2s ease-out;
+    
+}
+/* animation */
+.navbar .menu li a:hover{
+    color: #1f060f;
+}
+/* menubutton ______________________________________________*/
+.menu_button{
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+   
+
+}
+/* responsive media queries */
+@media (max-width:700px){
+    
+    
+
+    
+    .navbar .menu li{
+        display: inline-block;
+        margin: 30px 10px 0px 0px  
+    }
+    .navbar .menu li a{
+        display: inline-block;
+        font-size: 14px;
+    }
+    .navbar .name{
+        display: inline-block;
+        font-size: 14px;
+    }
+    .mainpage .homecontent{
+        margin-left: 0px;
+    }
+    .mainpage .homecontent a{
+        width: 150px;
+    }
+    .hobbies .hobbies-content .card{
+        width:100%;
+    }
+    /* .skills .container{ */
+        /* position: relative; */
+        /* bottom: 100px; */
+
+}
+
+    
+    
+/*______________________________________________  */
+.mainpage{
+    display: flex;
+    color: white;
+    background-image: url(/mainpage.jpg) ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 85vh;
+}
+.mainpage .container{ 
+    margin: auto 0 auto 90px;
+
+}
+.mainpage .homecontent .text1{
+    
+    font-size: 20px;
+    font-weight: 300;
+    color:  #D4155B;
+    margin-left: 5px;
+
+
+
+}
+.mainpage .homecontent .text2{
+    
+    font-size: 60px;
+    margin-bottom: 40px;
+    
+    
+}
+.mainpage .homecontent .text3{
+    
+    font-size: 20px;
+    font-weight: 100;
+    color:white;
+   
+}
+.mainpage .homecontent a{
+    color: white;
+    display: inline-block;
+    background: #D4155B;
+    font-size: 16px;
+    padding: 4px 36px;
+    margin: 50px 10px;
+    border-radius: 30px;
+    border:1px solid #D4155B;
+    width: 200px;
+    height: 25px;
+    text-align: center;
+    transition: all 0.2s ease-out;
+
+
+}
+
+.mainpage .homecontent a:hover{
+    color: #D4155B;
+    background: none;
+
+
+}
+/* Hobbies_______________________________________________ */
+
+
+
+
+
+ .card{
+    background: #2A2F39;
+    border:3px solid #D4155B;
+    color: white;
+    border-radius: 20px;
+    padding: 25px 35px;
+    
+    cursor: pointer;
+    transition: all 0.2s ease-out; 
+    width: 300px;
+    font-size: 28px;
+    
+
+
+}
+.hobbies .hobbies-content .card p{
+    font-size: 14px;
+    color: #D4155B;
+    align-self: center;
+}
+.title{
+    z-index: 2;
+    margin: 20vw 0 auto 40vw ;
+    font-size: 50px;
+    color: #D4155B;
+    text-decoration: underline overline #2A2F39;
+    align-self: flex-start;
+}
+   
+   
+   
+   
+   
+
+
+.hobbies .hobbies-content .card img{
+    height: 200px;
+    width: 200px;
+    margin-left: 10px;
+    object-fit: cover;
+    
+}
+
+.hobbies .hobbies-content{
+    background: #2A2F39;
+    margin: 30px 50px 0px 50px;
+    display: flex;
+    height: 70vh;
+    flex-wrap:no-wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    
+    color:#2A2F39;
+    }
+    
+}
+
+.hobbies .hobbies-content .card .box .text{
+    font-size: 100px;
+    font-weight: bolder;
+
+}
+
+.hobbies .hobbies-content .card .box{
+    transition: all 0.5s ease-out;
+
+}
+/* .hobbies .hobbies-content .card:hover .box{ */
+    /* transform: scale(1.15); */
+/* } */
+.hobbies .hobbies-content .card:hover{
+    transform: scale(1.2);
+    background: #D4155B;
+}
+
+/* Skils_______________________________________________________________ */
+.skills .skills-content{
+    color: #DDECF7;
+    background: #2A2F39;
+    position: relative;
+    margin: 40px 50px 0 50px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    
+    
+    height: 80vh;
+    
+    align-items: center;
+    justify-content:center;   
+    
+}
+.skills .container{
+    position: relative;
+    margin-top: 50vh;
+}
+.skills .skills-content .bars {
+    
+    margin-bottom: 10px;
+}
+.skills .skills-content .outbox{
+    background: #DDECF7;
+    width: 20vw;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+.skills .skills-content .skill{
+    background: #D4155B;
+    color: white;
+    text-align: right;
+    border-radius: 5px;
+} 
+.skills .skills-content .html{
+    width: 12vw;
+}
+.skills .skills-content .css{
+    width: 10vw;
+}
+.skills .skills-content .javascript{
+    width: 5vw;
+}
+
+.skills .skills-content .python{
+    width: 15vw;
+}
+.skills .skills-content .Unreal__Engine{
+    width: 7vw;
+}
+.skills .skills-content .outbox{
+    transition: all 0.5s ease-out;
+    
+
+}
+/* transitio______________________________________________________________________________ */
+.skills .skills-content .skill{
+    transition: all 0.5s ease-out;
+}
+.skills .skills-content .outbox:hover{
+    transform: scale(1.5);
+    background:white;
+     
+}
+
+
+
+
+
+.skills .skills-content .skill:hover{
+    
+}
+
+
+
+
+
+
+p {
+    font-size: 20px;
+    color: white;
+    margin: 10px 0;
+
+}
+.end .container2{
+    color: #DDECF7;
+    background: #D4155B;
+    margin: 90px 50px 0 50px;
+    display: flex;
+    flex-direction: column;
+        
+    height: 30vh;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;   
+
+}
+
+.end p{
+    padding: 80px;
+    color: white;
+    font-size: 16px;
+    font-stretch: expanded;
+    width: calc(50% - 18px );
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
