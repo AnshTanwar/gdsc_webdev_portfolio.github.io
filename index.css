@@ -372,6 +372,13 @@ p {
     width: calc(50% - 18px );
 }
 
+.end .contact{
+    padding: 10px;
+    margin-right: 100px;
+    display: flex;
+    justify-content: right;
+    align-content: center;
+}
 
 
 
