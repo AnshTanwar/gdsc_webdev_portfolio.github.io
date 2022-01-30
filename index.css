@@ -160,6 +160,7 @@ body{
    
 }
 .mainpage .homecontent a{
+    text-decoration:none;
     color: white;
     display: inline-block;
     background: #D4155B;
